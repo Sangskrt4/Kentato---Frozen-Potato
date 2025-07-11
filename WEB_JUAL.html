@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kentato - Frozen Potato</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #fff8dc, #f6f9fc);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #ffcc00, #ff9900);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      animation: pulse 3s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { background-color: #ffcc00; }
+      50% { background-color: #ffd633; }
+    }
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .logo-title img {
+      width: 60px;
+    }
+    .logo-title h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #2c2c2c;
+      animation: colorShift 5s infinite;
+    }
+    @keyframes colorShift {
+      0%, 100% { color: #2c2c2c; }
+      50% { color: #d2691e; }
+    }
+    header .dropdown {
+      position: relative;
+    }
+    .dots {
+      cursor: pointer;
+      font-size: 24px;
+      padding: 10px;
+      font-weight: bold;
+    }
+    .menu {
+      display: none;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .menu a {
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #333;
+    }
+    .menu a:hover {
+      background: #f0f0f0;
+    }
+    .dropdown:hover .menu {
+      display: block;
+    }
+    header p {
+      font-style: italic;
+      color: #fff;
+      text-align: center;
+      width: 100%;
+    }
+    nav {
+      background: #2c2c2c;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #ffcc00;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      color: #d2691e;
+      text-align: center;
+    }
+    .produk {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .promo {
+      text-align: center;
+    }
+    .promo img {
+      max-width: 100%;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+    .beli {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .beli a {
+      background: #ff9900;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+      transition: background 0.3s;
+    }
+    .beli a:hover {
+      background: #cc7a00;
+    }
+    footer {
+      background: #2c2c2c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <a href="https://freeimage.host/i/FEjYKUG"><img src="https://iili.io/FEjYKUG.md.png" alt="Logo Kentato" border="0"></a>
+      <h1>KENTATO</h1>
+    </div>
+    <div class="dropdown">
+      <div class="dots">&#8942;</div>
+      <div class="menu">
+        <a href="#">Akun</a>
+        <a href="#">Keranjang</a>
+        <a href="#">Bantuan</a>
+      </div>
+    </div>
+  </header>
+  <p><em><marquee behavior="alternate" scrollamount="6">"Frozen Potato, <span style='color:#ff6600;'>Fresh Happiness!</span>"</marquee></em></p>
+
+  <nav>
+    <a href="#keunggulan">Keunggulan</a>
+    <a href="#produk">Produk</a>
+    <a href="#tentang">Tentang Kami</a>
+    <a href="#promo">Promo</a>
+    <a href="#beli">Beli</a>
+  </nav>
+
+  <section id="keunggulan">
+    <h2>Kenapa Memilih <span style="color:#ff6600;">Kentato?</span></h2>
+    <ul>
+      <li>✓ <strong>Produk beku</strong> siap goreng, praktis dan lezat</li>
+      <li>✓ <strong>Tanpa bahan pengawet</strong></li>
+      <li>✓ Rasa khas Indonesia: <span style="color:#cc0000;">Balado</span>, <span style="color:#ff6600;">Keju Pedas</span>, <span style="color:#996600;">BBQ</span></li>
+      <li>✓ Cocok untuk semua kalangan: anak-anak, remaja, keluarga</li>
+      <li>✓ <strong>Kualitas restoran, harga kaki lima!</strong></li>
+    </ul>
+  </section>
+
+  <section id="produk">
+    <h2>Varian Produk Kentato</h2>
+    <div class="produk">
+      <div class="card">
+        <a href="https://freeimage.host/"><img src="https://iili.io/FEwXXTX.jpg" alt="Kentato Original" border="0"></a>
+        <h3>Original</h3>
+        <p>Kentang goreng klasik dengan rasa gurih renyah alami.</p>
+      </div>
+      <div class="card">
+        <a href="https://freeimage.host/"><img src="https://iili.io/FEw5aUJ.png" alt="Kentato Balado" border="0"></a>
+        <h3 style="color:#cc0000;">Balado</h3>
+        <p>Pedas manis khas Minang yang menggugah selera.</p>
+      </div>
+      <div class="card">
+        <a href="https://freeimage.host/"><img src="https://iili.io/FEw5aUJ.png" alt="Kentato Keju Pedas" border="0"></a>
+        <h3 style="color:#ff6600;">Keju Pedas</h3>
+        <p>Perpaduan creamy-nya keju dan pedas yang pas!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Kentato</h2>
+    <p>
+      Kentato adalah brand lokal Indonesia yang bergerak di bidang makanan beku berbahan dasar kentang. Dengan mengusung maskot lucu bernama <strong>"Pota"</strong>, kami menghadirkan camilan praktis dan sehat yang cocok dinikmati kapan saja dan oleh siapa saja. 
+    </p>
+    <p>
+      Kentato percaya bahwa makanan bukan sekadar mengenyangkan, tapi juga bisa menyenangkan. Itulah mengapa kami selalu menjaga kualitas dan cita rasa dalam setiap kemasan.
+    </p>
+        <p>
+      Kami percaya bahwa makanan bukan hanya soal rasa, tapi juga tentang pengalaman. Oleh karena itu, Kentato selalu berinovasi menghadirkan varian rasa baru dan desain kemasan yang menarik, termasuk tokoh maskot Pota yang kini menjadi ikon brand kami.
+    </p>
+    <p>
+      Tak hanya berfokus pada rasa, Kentato juga memperhatikan aspek kesehatan dan keamanan pangan. Kami menggunakan bahan-bahan berkualitas tinggi, bebas pengawet berbahaya, dan melalui proses produksi yang higienis dan efisien.
+    </p>
+    <p>
+      Ke depannya, Kentato ingin terus berkembang menjadi produk yang tidak hanya tersedia secara lokal, tetapi juga dikenal luas di seluruh Indonesia. Kami juga membuka peluang kolaborasi dan reseller bagi siapa saja yang ingin tumbuh bersama kami.
+    </p>
+    <p>
+      Dengan karakter maskot lucu bernama <strong>Pota</strong>, Kentato bukan hanya menjual makanan, tapi juga menghadirkan pengalaman menyenangkan bagi keluarga, pelajar, mahasiswa, hingga pekerja yang butuh camilan cepat dan bergizi.
+    </p>
+    <p>
+      Visi kami adalah menjadi brand kentang beku nomor satu di Indonesia, dan misi kami adalah menyajikan produk lezat, aman, dan terjangkau dengan inovasi rasa yang terus berkembang. <span style="color:#d2691e; font-weight:bold;">Karena bagi kami, makanan beku tak harus membosankan!</span>
+    </p>
+  </section>
+
+  <section id="promo" class="promo">
+    <h2>Poster Promosi</h2>
+    <img src="https://iili.io/FEj4sl1.jpg" alt="Promo Kentato" border="0">
+    <img src="https://iili.io/FEOCWy7.png" alt="50% Promo" border="0">
+  </section>
+
+  <section id="beli" class="beli">
+    <h2>Tempat Pembelian</h2>
+    <p>Kamu bisa membeli produk <strong>Kentato</strong> di:</p>
+    <a href="https://tokopedia.com" target="_blank">Tokopedia</a>
+    <a href="https://id.shp.ee/Fmaii5m" target="_blank">Shopee</a>
+    <a href="https://wa.me/6281234567890" target="_blank">WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kentato Frozen Potato | <span style="color: #ffcc00;">#BekunyaLezat</span> <span style="color: #ff9900;">#KentatoEnak</span></p>
+  </footer>
+</body>
+</html>
